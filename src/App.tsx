@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import CharacterForm from "./Components/CharacterForm";
+import { CharacterForm } from "./Components/CharacterForm";
 
 // [ ]
 
@@ -10,12 +10,14 @@ export interface Stats {
   versatility: Number;
   armor: Number;
   avoidance: Number;
-  passive: Number;
+  passives: Number;
   external?: Number;
 }
 
 export default function App() {
   const [charStats, setCharStats] = useState<Stats>();
+
+  console.log(charStats);
 
   return (
     <div className="text-slate-200 flex flex-col justify-center items-center ">
@@ -23,7 +25,7 @@ export default function App() {
       <div className="flex flex-col justify-center items-center h-80">
         <h1 className="text-4xl">Find out if you're getting one-shot</h1>
       </div>
-      <CharacterForm setStats={setCharStats} />
+      <CharacterForm setCharStats={setCharStats} />
     </div>
   );
 }
