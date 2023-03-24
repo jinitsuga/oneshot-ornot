@@ -23,9 +23,9 @@ export default function App() {
   return (
     <div className="text-plink flex flex-col justify-center items-center ">
       <Navbar />
-      <h1 className="text-4xl m-10">Find out if you're getting one-shot</h1>
-      {!charStats && <CharacterForm setCharStats={setCharStats} />}
-      {charStats && <DungeonSelector />}
+      {/* <h1 className="text-4xl m-10">Find out if you're getting one-shot</h1>
+      {!charStats && <CharacterForm setCharStats={setCharStats} />} */}
+      <DungeonSelector />
     </div>
   );
 }
