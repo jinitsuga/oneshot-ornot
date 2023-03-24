@@ -1,0 +1,9 @@
+{
+  "name": "Algeth'ar Academy",
+  "image": "https://static.icy-veins.com/images/wow/dragonflight/dungeons/algethar-academy-small.jpg",
+  "bosses": {
+    "Vexamus": {
+      "Arcane Expulsion": { "type": "arcane" }
+    }
+  }
+}

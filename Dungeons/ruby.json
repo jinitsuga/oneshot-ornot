@@ -1,0 +1,23 @@
+{
+  "name": "Ruby Life Pools",
+  "image": "https://static.icy-veins.com/images/wow/dragonflight/dungeons/ruby-life-pools-small.jpg",
+  "bosses": {
+    "Melidrussa": {
+      "Frigid Shard": { "type": "frost", "damage": 44064 },
+      "Chillstorm": { "type": "frost", "damage": 26451 },
+      "Frost Overload": { "type": "frost", "damage": 20940 }
+    },
+    "Kokia Blazehoof": {
+      "Inferno": { "type": "fire", "damage": 158703 },
+      "Searing Wounds": { "type": "bleed", "damage": 105808 }
+    },
+    "Kyrakka and Erkhart": {
+      "Infernocore-dot": { "type": "fire", "damage": 158703 },
+      "Infernocore-end": { "type": "fire", "damage": 14327 },
+      "Flamespit": { "type": "fire", "damage": 22042 },
+      "Interrupting Cloudburst": { "type": "nature", "damage": 22042 },
+      "Stormslam-phys": { "type": "physical", "damage": 110211 },
+      "Stormslam-nature": { "type": "nature", "damage": 35267 }
+    }
+  }
+}
