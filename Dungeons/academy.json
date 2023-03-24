@@ -3,7 +3,22 @@
   "image": "https://static.icy-veins.com/images/wow/dragonflight/dungeons/algethar-academy-small.jpg",
   "bosses": {
     "Vexamus": {
-      "Arcane Expulsion": { "type": "arcane" }
+      "Arcane Expulsion": { "type": "arcane", "damage": 99190 },
+      "Mana Bombs": { "type": "arcane", "damage": 66126 },
+      "Arcane Fissure": { "type": "arcane", "damage": 28655 }
+    },
+    "Overgrown Ancient": {
+      "Barkbreaker": { "type": "physical", "damage": 105802 },
+      "Burst Forth": { "type": "nature", "damage": 44084 },
+      "Splinterbark": { "type": "bleed", "damage": 22042 }
+    },
+    "Crawth": {
+      "Deafening Screech": { "type": "nature", "damage": 26451 },
+      "Savage Peck instant": { "type": "physical", "damage": 165316 },
+      "Peck dot": { "type": "bleed", "damage": 330630 }
+    },
+    "Echo of Doragosa": {
+      "Energy Bomb": { "type": "arcane", "damage": 39676 }
     }
   }
 }
