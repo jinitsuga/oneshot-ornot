@@ -25,7 +25,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
 
   return (
     <div
-      className="flex flex-col justify-center items-center gap-4 font-['Poppins', sans-serif] border p-2
+      className="flex flex-col justify-center items-center gap-2 font-['Poppins', sans-serif] border p-2
     rounded w-[500px]"
     >
       <h3 className="text-2xl">Add your character's info:</h3>

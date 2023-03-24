@@ -20,11 +20,11 @@ export default function App() {
   console.log(charStats);
 
   return (
-    <div className="text-slate-200 flex flex-col justify-center items-center ">
+    <div className="text-plink flex flex-col justify-center items-center ">
       <Navbar />
-      <div className="flex flex-col justify-center items-center h-80">
-        <h1 className="text-4xl">Find out if you're getting one-shot</h1>
-      </div>
+      {/* <div className="flex flex-col justify-center items-center h-64"> */}
+      <h1 className="text-4xl m-10">Find out if you're getting one-shot</h1>
+      {/* </div> */}
       <CharacterForm setCharStats={setCharStats} />
     </div>
   );
