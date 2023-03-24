@@ -7,12 +7,14 @@ const dungeons = await import("./Dungeons/season1dungeons.json");
 const DungeonSelector: FC = () => {
   return (
     <div>
-      <DungeonListItem dungeon={dungeons.RLP} />
-      <DungeonListItem dungeon={dungeons.academy} />
       <form>
         <ul>
-          <li></li>
-          <li></li>
+          <li>
+            <DungeonListItem dungeon={dungeons.academy} />
+          </li>
+          <li>
+            <DungeonListItem dungeon={dungeons.RLP} />
+          </li>
         </ul>
       </form>
     </div>
