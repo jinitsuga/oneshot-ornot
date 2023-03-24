@@ -1,0 +1,49 @@
+{
+  "RLP": {
+    "name": "Ruby Life Pools",
+    "image": "https://static.icy-veins.com/images/wow/dragonflight/dungeons/ruby-life-pools-small.jpg",
+    "bosses": {
+      "Melidrussa": {
+        "Frigid Shard": { "type": "frost", "damage": 44064 },
+        "Chillstorm": { "type": "frost", "damage": 26451 },
+        "Frost Overload": { "type": "frost", "damage": 20940 }
+      },
+      "Kokia Blazehoof": {
+        "Inferno": { "type": "fire", "damage": 158703 },
+        "Searing Wounds": { "type": "bleed", "damage": 105808 }
+      },
+      "Kyrakka and Erkhart": {
+        "Infernocore-dot": { "type": "fire", "damage": 158703 },
+        "Infernocore-end": { "type": "fire", "damage": 14327 },
+        "Flamespit": { "type": "fire", "damage": 22042 },
+        "Interrupting Cloudburst": { "type": "nature", "damage": 22042 },
+        "Stormslam-phys": { "type": "physical", "damage": 110211 },
+        "Stormslam-nature": { "type": "nature", "damage": 35267 }
+      }
+    }
+  },
+  "academy": {
+    "name": "Algeth'ar Academy",
+    "image": "https://static.icy-veins.com/images/wow/dragonflight/dungeons/algethar-academy-small.jpg",
+    "bosses": {
+      "Vexamus": {
+        "Arcane Expulsion": { "type": "arcane", "damage": 99190 },
+        "Mana Bombs": { "type": "arcane", "damage": 66126 },
+        "Arcane Fissure": { "type": "arcane", "damage": 28655 }
+      },
+      "Overgrown Ancient": {
+        "Barkbreaker": { "type": "physical", "damage": 105802 },
+        "Burst Forth": { "type": "nature", "damage": 44084 },
+        "Splinterbark": { "type": "bleed", "damage": 22042 }
+      },
+      "Crawth": {
+        "Deafening Screech": { "type": "nature", "damage": 26451 },
+        "Savage Peck instant": { "type": "physical", "damage": 165316 },
+        "Peck dot": { "type": "bleed", "damage": 330630 }
+      },
+      "Echo of Doragosa": {
+        "Energy Bomb": { "type": "arcane", "damage": 39676 }
+      }
+    }
+  }
+}

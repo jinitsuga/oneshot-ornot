@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import { CharacterForm } from "./Components/CharacterForm";
+import { DungeonSelector } from "./Components/DungeonSelector";
 
 // [ ]
 
@@ -22,10 +23,9 @@ export default function App() {
   return (
     <div className="text-plink flex flex-col justify-center items-center ">
       <Navbar />
-      {/* <div className="flex flex-col justify-center items-center h-64"> */}
       <h1 className="text-4xl m-10">Find out if you're getting one-shot</h1>
-      {/* </div> */}
-      <CharacterForm setCharStats={setCharStats} />
+      {!charStats && <CharacterForm setCharStats={setCharStats} />}
+      {charStats && <DungeonSelector />}
     </div>
   );
 }
