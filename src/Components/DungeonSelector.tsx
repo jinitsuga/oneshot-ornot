@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { DungeonListItem } from "./DungeonItem";
+import { DungeonListItem } from "./DungeonListItem";
 // import "./Dungeons/season1dungeons.json";
 
 const dungeons = await import("./Dungeons/season1dungeons.json");

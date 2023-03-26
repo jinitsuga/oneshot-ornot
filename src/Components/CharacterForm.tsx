@@ -25,7 +25,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
 
   return (
     <div
-      className="flex flex-col justify-center  items-center gap-2 font-['Poppins', sans-serif] border-yello
+      className="flex flex-col justify-center  items-center gap-2 font-['Poppins', sans-serif] border-emphasis
       border-2 p-2 rounded w-[500px]"
     >
       <h3 className="text-2xl">Add your character's info:</h3>
@@ -58,7 +58,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
           className="flex flex-col justify-center items-center text-xl m-2"
           htmlFor="armor"
         >
-          Armor:
+          % reduction from Armor:
           <input
             className="text-slate-900 text-xl rounded p-2 m-2"
             type="number"

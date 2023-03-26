@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#000000",
-        purp: "#5800FF",
-        plink: "#E900FF",
-        yello: "#FFC600",
+        background: "#393E46",
+        text: "#AAD8D3",
+        emphasis: "#00ADB5",
+        lighter: "#EEEEEE",
       },
     },
   },
