@@ -18,8 +18,10 @@ const DungeonListItem: FC<DungeonData> = ({ dungeon, bossSelect }) => {
       bossSelect(boss);
     };
 
+    // MIGHT NEED TO TURN THE <LI> INTO A <LI> ELEMENT WITH A BUTTON INSIDE FOR KEYBOARD ONLY NAV
     return (
       <li
+        className="hover:cursor-pointer"
         onClick={(e) => {
           e.preventDefault();
           selectBoss();

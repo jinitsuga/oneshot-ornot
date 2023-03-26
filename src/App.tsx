@@ -19,7 +19,7 @@ export default function App() {
   const [charStats, setCharStats] = useState<Stats>();
   const [selectedBoss, setSelectedBoss] = useState<any>();
 
-  console.log(charStats);
+  console.log(selectedBoss);
 
   return (
     <div className="text-lighter flex flex-col justify-center items-center ">
