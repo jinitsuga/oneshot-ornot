@@ -28,7 +28,7 @@ export default function App() {
         Find out if you're getting one-shot
       </h1>
       {!charStats && <CharacterForm setCharStats={setCharStats} />}
-      <DungeonSelector />
+      <DungeonSelector bossSelect={setSelectedBoss} />
     </div>
   );
 }

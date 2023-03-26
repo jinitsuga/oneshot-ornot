@@ -5,18 +5,30 @@ interface DungeonData {
   bossSelect: any;
 }
 
-const DungeonListItem: FC<DungeonData> = ({ dungeon }) => {
+const DungeonListItem: FC<DungeonData> = ({ dungeon, bossSelect }) => {
   const [dungeonSelected, setDungeonSelect] = React.useState<boolean>(false);
 
   const entries = Object.entries(dungeon);
 
   const bossesAndAbilities = Object.entries(entries[2][1]);
-  console.log(bossesAndAbilities);
+  // console.log(bossesAndAbilities);
 
   const bossNames = bossesAndAbilities.map((boss, id) => {
-    const selectBoss = () => {};
+    const selectBoss = () => {
+      bossSelect(boss);
+    };
 
-    return <li key={id}>{boss[0]}</li>;
+    return (
+      <li
+        onClick={(e) => {
+          e.preventDefault();
+          selectBoss();
+        }}
+        key={id}
+      >
+        {boss[0]}
+      </li>
+    );
   });
 
   return (
