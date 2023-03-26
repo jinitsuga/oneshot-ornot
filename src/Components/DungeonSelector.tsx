@@ -6,7 +6,8 @@ const dungeons = await import("./Dungeons/season1dungeons.json");
 
 const DungeonSelector: FC = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center">
+      <h3 className="text-4xl text-emphasis m-10"> Select a dungeon </h3>
       <form>
         <ul>
           <li>

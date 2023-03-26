@@ -17,6 +17,7 @@ export interface Stats {
 
 export default function App() {
   const [charStats, setCharStats] = useState<Stats>();
+  const [selectedBoss, setSelectedBoss] = useState<any>();
 
   console.log(charStats);
 

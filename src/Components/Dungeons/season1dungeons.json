@@ -4,21 +4,29 @@
     "image": "https://static.icy-veins.com/images/wow/dragonflight/dungeons/ruby-life-pools-small.jpg",
     "bosses": {
       "Melidrussa": {
-        "Frigid Shard": { "type": "frost", "damage": 44064 },
-        "Chillstorm": { "type": "frost", "damage": 26451 },
-        "Frost Overload": { "type": "frost", "damage": 20940 }
+        "Frigid Shard": { "type": "frost", "damage": 44064, "aoe": false },
+        "Chillstorm": { "type": "frost", "damage": 26451, "aoe": true },
+        "Frost Overload": { "type": "frost", "damage": 20940, "aoe": true }
       },
       "Kokia Blazehoof": {
-        "Inferno": { "type": "fire", "damage": 158703 },
-        "Searing Wounds": { "type": "bleed", "damage": 105808 }
+        "Inferno": { "type": "fire", "damage": 158703, "aoe": true },
+        "Searing Wounds": { "type": "bleed", "damage": 105808, "aoe": false }
       },
       "Kyrakka and Erkhart": {
-        "Infernocore-dot": { "type": "fire", "damage": 158703 },
-        "Infernocore-end": { "type": "fire", "damage": 14327 },
-        "Flamespit": { "type": "fire", "damage": 22042 },
-        "Interrupting Cloudburst": { "type": "nature", "damage": 22042 },
-        "Stormslam-phys": { "type": "physical", "damage": 110211 },
-        "Stormslam-nature": { "type": "nature", "damage": 35267 }
+        "Infernocore-dot": { "type": "fire", "damage": 158703, "aoe": false },
+        "Infernocore-end": { "type": "fire", "damage": 14327, "aoe": false },
+        "Flamespit": { "type": "fire", "damage": 22042, "aoe": false },
+        "Interrupting Cloudburst": {
+          "type": "nature",
+          "damage": 22042,
+          "aoe": true
+        },
+        "Stormslam-phys": {
+          "type": "physical",
+          "damage": 110211,
+          "aoe": false
+        },
+        "Stormslam-nature": { "type": "nature", "damage": 35267, "aoe": false }
       }
     }
   },
@@ -27,22 +35,26 @@
     "image": "https://static.icy-veins.com/images/wow/dragonflight/dungeons/algethar-academy-small.jpg",
     "bosses": {
       "Vexamus": {
-        "Arcane Expulsion": { "type": "arcane", "damage": 99190 },
-        "Mana Bombs": { "type": "arcane", "damage": 66126 },
-        "Arcane Fissure": { "type": "arcane", "damage": 28655 }
+        "Arcane Expulsion": { "type": "arcane", "damage": 99190, "aoe": false },
+        "Mana Bombs": { "type": "arcane", "damage": 66126, "aoe": false },
+        "Arcane Fissure": { "type": "arcane", "damage": 28655, "aoe": false }
       },
       "Overgrown Ancient": {
-        "Barkbreaker": { "type": "physical", "damage": 105802 },
-        "Burst Forth": { "type": "nature", "damage": 44084 },
-        "Splinterbark": { "type": "bleed", "damage": 22042 }
+        "Barkbreaker": { "type": "physical", "damage": 105802, "aoe": false },
+        "Burst Forth": { "type": "nature", "damage": 44084, "aoe": true },
+        "Splinterbark": { "type": "bleed", "damage": 22042, "aoe": false }
       },
       "Crawth": {
-        "Deafening Screech": { "type": "nature", "damage": 26451 },
-        "Savage Peck instant": { "type": "physical", "damage": 165316 },
-        "Peck dot": { "type": "bleed", "damage": 330630 }
+        "Deafening Screech": { "type": "nature", "damage": 26451, "aoe": true },
+        "Savage Peck instant": {
+          "type": "physical",
+          "damage": 165316,
+          "aoe": false
+        },
+        "Peck dot": { "type": "bleed", "damage": 330630, "aoe": false }
       },
       "Echo of Doragosa": {
-        "Energy Bomb": { "type": "arcane", "damage": 39676 }
+        "Energy Bomb": { "type": "arcane", "damage": 39676, "aoe": false }
       }
     }
   }
