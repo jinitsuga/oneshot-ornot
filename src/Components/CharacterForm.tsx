@@ -15,8 +15,6 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
     external: 0,
   });
 
-  console.log(stats);
-
   function updateStats(e: any) {
     setStats((oldstats) => {
       return { ...oldstats, [e.target.name]: e.target.value };
@@ -40,6 +38,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
             type="number"
             name="hp"
             onChange={updateStats}
+            value={stats.hp > 0 ? stats.hp : undefined}
           ></input>
         </label>
         <label
@@ -52,6 +51,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
             type="number"
             name="versatility"
             onChange={updateStats}
+            value={stats.versatility > 0 ? stats.versatility : undefined}
           ></input>
         </label>
         <label
@@ -64,6 +64,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
             type="number"
             name="armor"
             onChange={updateStats}
+            value={stats.armor > 0 ? stats.armor : undefined}
           ></input>
         </label>
         <label
@@ -76,6 +77,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
             type="number"
             name="avoidance"
             onChange={updateStats}
+            value={stats.avoidance > 0 ? stats.avoidance : undefined}
           ></input>
         </label>
         <label
@@ -88,6 +90,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
             type="number"
             name="passives"
             onChange={updateStats}
+            value={stats.passives > 0 ? stats.passives : undefined}
           ></input>
         </label>
         <label
@@ -100,6 +103,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
             type="number"
             name="external"
             onChange={updateStats}
+            value={stats.external > 0 ? stats.external : undefined}
           ></input>
         </label>
         <button
@@ -107,7 +111,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
           className="text-xl text-gray-900 bg-slate-100 p-2 m-2 rounded"
           onClick={(e) => {
             e.preventDefault();
-
+            localStorage.setItem("stats", JSON.stringify(stats));
             if (stats.hp > 1 && stats.armor > 1) {
               setCharStats(stats);
             }

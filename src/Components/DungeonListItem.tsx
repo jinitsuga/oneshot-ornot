@@ -6,8 +6,6 @@ interface DungeonData {
 }
 
 const DungeonListItem: FC<DungeonData> = ({ dungeon, bossSelect }) => {
-  const [dungeonSelected, setDungeonSelect] = React.useState<boolean>(false);
-
   const entries = Object.entries(dungeon);
 
   const bossesAndAbilities = Object.entries(entries[2][1]);
@@ -20,15 +18,16 @@ const DungeonListItem: FC<DungeonData> = ({ dungeon, bossSelect }) => {
 
     // MIGHT NEED TO TURN THE <LI> INTO A <LI> ELEMENT WITH A BUTTON INSIDE FOR KEYBOARD ONLY NAV
     return (
-      <li
-        className="hover:cursor-pointer"
-        onClick={(e) => {
-          e.preventDefault();
-          selectBoss();
-        }}
-        key={id}
-      >
-        {boss[0]}
+      <li key={id}>
+        <button
+          className="hover:cursor-pointer"
+          onClick={(e) => {
+            e.preventDefault();
+            selectBoss();
+          }}
+        >
+          {boss[0]}
+        </button>
       </li>
     );
   });

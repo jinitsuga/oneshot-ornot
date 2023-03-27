@@ -27,8 +27,8 @@ export default function App() {
       <h1 className="text-4xl text-emphasis m-10">
         Find out if you're getting one-shot
       </h1>
-      {!charStats && <CharacterForm setCharStats={setCharStats} />}
-      <DungeonSelector bossSelect={setSelectedBoss} />
+      {!localStorage.stats && <CharacterForm setCharStats={setCharStats} />}
+      {localStorage.stats && <DungeonSelector bossSelect={setSelectedBoss} />}
     </div>
   );
 }

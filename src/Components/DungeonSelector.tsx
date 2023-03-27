@@ -11,7 +11,10 @@ interface Props {
 const DungeonSelector: FC<Props> = ({ bossSelect }) => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <h3 className="text-4xl text-emphasis m-10"> Select a dungeon </h3>
+      <h3 className="text-4xl text-emphasis m-10">
+        {" "}
+        Select a boss from one of the dungeons!{" "}
+      </h3>
       <form>
         <ul>
           <li>

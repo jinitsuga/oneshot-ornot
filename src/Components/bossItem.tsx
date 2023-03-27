@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 
 interface Props {
-  abilities: any;
+  bossInfo: any;
 }
 
-const Boss: FC<Props> = ({ abilities }) => {
+const Boss: FC<Props> = ({ bossInfo }) => {
   return <div></div>;
 };
 
