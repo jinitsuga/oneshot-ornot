@@ -19,6 +19,7 @@ export default function App() {
   const [charStats, setCharStats] = useState<Stats>();
   const [selectedBoss, setSelectedBoss] = useState<any>();
 
+  console.log(charStats);
   console.log(selectedBoss);
 
   return (
@@ -28,7 +29,12 @@ export default function App() {
         Find out if you're getting one-shot
       </h1>
       {!localStorage.stats && <CharacterForm setCharStats={setCharStats} />}
-      {localStorage.stats && <DungeonSelector bossSelect={setSelectedBoss} />}
+      {localStorage.stats && (
+        <DungeonSelector
+          setCharStats={setCharStats}
+          bossSelect={setSelectedBoss}
+        />
+      )}
     </div>
   );
 }

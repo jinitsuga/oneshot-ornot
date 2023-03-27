@@ -38,7 +38,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
             type="number"
             name="hp"
             onChange={updateStats}
-            value={stats.hp > 0 ? stats.hp : undefined}
+            value={localStorage.stats && localStorage.stats.hp}
           ></input>
         </label>
         <label
@@ -51,7 +51,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
             type="number"
             name="versatility"
             onChange={updateStats}
-            value={stats.versatility > 0 ? stats.versatility : undefined}
+            value={localStorage.stats && localStorage.stats.versatility}
           ></input>
         </label>
         <label
@@ -64,7 +64,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
             type="number"
             name="armor"
             onChange={updateStats}
-            value={stats.armor > 0 ? stats.armor : undefined}
+            value={localStorage.stats && localStorage.stats.armor}
           ></input>
         </label>
         <label
@@ -77,7 +77,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
             type="number"
             name="avoidance"
             onChange={updateStats}
-            value={stats.avoidance > 0 ? stats.avoidance : undefined}
+            value={localStorage.stats && localStorage.stats.avoidance}
           ></input>
         </label>
         <label
@@ -90,7 +90,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
             type="number"
             name="passives"
             onChange={updateStats}
-            value={stats.passives > 0 ? stats.passives : undefined}
+            value={localStorage.stats && localStorage.stats.passives}
           ></input>
         </label>
         <label
@@ -103,7 +103,7 @@ const CharacterForm: FC<Props> = ({ setCharStats }) => {
             type="number"
             name="external"
             onChange={updateStats}
-            value={stats.external > 0 ? stats.external : undefined}
+            value={localStorage.stats && localStorage.stats.external}
           ></input>
         </label>
         <button

@@ -9,14 +9,11 @@ const DungeonListItem: FC<DungeonData> = ({ dungeon, bossSelect }) => {
   const entries = Object.entries(dungeon);
 
   const bossesAndAbilities = Object.entries(entries[2][1]);
-  // console.log(bossesAndAbilities);
 
   const bossNames = bossesAndAbilities.map((boss, id) => {
     const selectBoss = () => {
       bossSelect(boss);
     };
-
-    // MIGHT NEED TO TURN THE <LI> INTO A <LI> ELEMENT WITH A BUTTON INSIDE FOR KEYBOARD ONLY NAV
     return (
       <li key={id}>
         <button
